@@ -73,4 +73,11 @@ public class FibonacciTest {
         Assertions.assertArrayEquals(testOne.toArray(), Fibonacci.getFibonacciSequence(0).toArray());
     }
 
+    @Test
+    @DisplayName("return 0 from fibonacci with null as input")
+    void return0FromFibonacciWithNullAsInput(){
+        ArrayList<Integer> testOne = new ArrayList<>(Collections.singletonList(0));
+        Assertions.assertArrayEquals(testOne.toArray(), Fibonacci.getFibonacciSequence(null).toArray());
+    }
+
 }

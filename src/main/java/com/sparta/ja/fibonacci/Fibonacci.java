@@ -18,7 +18,7 @@ public class Fibonacci {
 
     public static ArrayList<Integer> getFibonacciSequence(Integer sequenceLength){
         ArrayList<Integer> arrayOfFibonacciNumbers = new ArrayList<>();
-        if (sequenceLength > 0) {
+        if (sequenceLength != null && sequenceLength > 0) {
             for (int i = 1; i <= sequenceLength; i++){
                 arrayOfFibonacciNumbers.add(getFibonacciNumberAtIndex(i));
             }
